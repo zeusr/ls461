@@ -1,0 +1,510 @@
+@charset "UTF-8";
+/* 共通レイアウト ================================ */
+/* line 3, /Users/RYOSUKE/ls461/app/assets/stylesheets/common.scss */
+body {
+  padding-top: 65px;
+  color: #364a4d;
+}
+
+/* line 8, /Users/RYOSUKE/ls461/app/assets/stylesheets/common.scss */
+ul, li {
+  list-style-type: none;
+}
+
+/* line 12, /Users/RYOSUKE/ls461/app/assets/stylesheets/common.scss */
+a {
+  text-decoration: none;
+  color: #1f89e2;
+}
+
+/* line 17, /Users/RYOSUKE/ls461/app/assets/stylesheets/common.scss */
+a:hover {
+  text-decoration: underline;
+  color: #1b7ccd;
+}
+
+/* line 22, /Users/RYOSUKE/ls461/app/assets/stylesheets/common.scss */
+.container {
+  width: 900px;
+  padding-top: 70px;
+  padding-left: 15px;
+  padding-right: 15px;
+  clear: both;
+}
+
+/* line 30, /Users/RYOSUKE/ls461/app/assets/stylesheets/common.scss */
+.heading {
+  display: inline-block;
+}
+
+/* フォント
+================================ */
+/* line 36, /Users/RYOSUKE/ls461/app/assets/stylesheets/common.scss */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+/* line 40, /Users/RYOSUKE/ls461/app/assets/stylesheets/common.scss */
+h1 {
+  font-size: 2em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+}
+
+/* line 46, /Users/RYOSUKE/ls461/app/assets/stylesheets/common.scss */
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  /*margin-bottom: 30px;*/
+  /*font-weight: normal;*/
+}
+
+/* line 53, /Users/RYOSUKE/ls461/app/assets/stylesheets/common.scss */
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+/* ヘッダー ================================ */
+/* line 59, /Users/RYOSUKE/ls461/app/assets/stylesheets/common.scss */
+.navbar {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  top: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  margin-bottom: 20px;
+}
+
+/* line 70, /Users/RYOSUKE/ls461/app/assets/stylesheets/common.scss */
+#logo {
+  float: left;
+  font-size: 1.7em;
+  color: #fff;
+  padding-top: 12px;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+/* line 79, /Users/RYOSUKE/ls461/app/assets/stylesheets/common.scss */
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 84, /Users/RYOSUKE/ls461/app/assets/stylesheets/common.scss */
+.header-right {
+  float: right;
+  margin: 0 auto;
+}
+
+/* line 89, /Users/RYOSUKE/ls461/app/assets/stylesheets/common.scss */
+.header-right a {
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+
+/* line 95, /Users/RYOSUKE/ls461/app/assets/stylesheets/common.scss */
+.header-right li {
+  line-height: 65px;
+  padding: 0 18px;
+  float: left;
+  color: white;
+}
+
+/* line 102, /Users/RYOSUKE/ls461/app/assets/stylesheets/common.scss */
+.vertical-line {
+  height: 22px;
+  margin-top: 22px;
+  margin-right: -36px;
+  border-left: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+/* line 109, /Users/RYOSUKE/ls461/app/assets/stylesheets/common.scss */
+.link-bg {
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.5s;
+}
+
+/* line 114, /Users/RYOSUKE/ls461/app/assets/stylesheets/common.scss */
+.link-bg:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* フッター ================================ */
+/* line 119, /Users/RYOSUKE/ls461/app/assets/stylesheets/common.scss */
+footer {
+  margin-top: 100px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #848484;
+}
+
+/* line 126, /Users/RYOSUKE/ls461/app/assets/stylesheets/common.scss */
+footer small {
+  float: left;
+}
+
+/* ボタン ================================ */
+/* line 131, /Users/RYOSUKE/ls461/app/assets/stylesheets/common.scss */
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* 「保存」ボタン */
+/* line 143, /Users/RYOSUKE/ls461/app/assets/stylesheets/common.scss */
+.primary-btn {
+  background-color: #239b76;
+}
+
+/* line 147, /Users/RYOSUKE/ls461/app/assets/stylesheets/common.scss */
+.primary-btn:hover {
+  background-color: #28b086;
+}
+
+/*　「編集」ボタン　*/
+/* line 152, /Users/RYOSUKE/ls461/app/assets/stylesheets/common.scss */
+.edit-btn {
+  background-color: #239b76;
+}
+
+/* line 156, /Users/RYOSUKE/ls461/app/assets/stylesheets/common.scss */
+.edit-btn:hover {
+  background-color: #28b086;
+  color: white;
+  text-decoration: none;
+}
+
+/*　「戻る」ボタン　*/
+/* line 163, /Users/RYOSUKE/ls461/app/assets/stylesheets/common.scss */
+.destroy-btn {
+  background-color: #1f89e2;
+}
+
+/* line 167, /Users/RYOSUKE/ls461/app/assets/stylesheets/common.scss */
+.destroy-btn:hover {
+  background-color: #3695e5;
+  color: white;
+  text-decoration: none;
+}
+
+/* フォーム================================ */
+/* line 174, /Users/RYOSUKE/ls461/app/assets/stylesheets/common.scss */
+input, textarea, select {
+  border: 1px solid #bbb;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  border-radius: 3px;
+}
+
+/* line 181, /Users/RYOSUKE/ls461/app/assets/stylesheets/common.scss */
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.428571429;
+  color: #555555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+}
+
+/*　エラーメッセージ　*/
+/* line 194, /Users/RYOSUKE/ls461/app/assets/stylesheets/common.scss */
+.alert {
+  margin-bottom: 20px;
+  border-radius: 4px;
+  font-size: small;
+}
+
+/* line 200, /Users/RYOSUKE/ls461/app/assets/stylesheets/common.scss */
+.alert-success {
+  line-height: 40px;
+  padding-left: 15px;
+  color: #3c763d;
+  background-color: #dff0d8;
+}
+
+/* line 207, /Users/RYOSUKE/ls461/app/assets/stylesheets/common.scss */
+.alert-danger {
+  padding: 10px 20px;
+  background-color: #f2dede;
+  color: #a94442;
+}
+
+/* line 213, /Users/RYOSUKE/ls461/app/assets/stylesheets/common.scss */
+.alert-danger ul li {
+  list-style-type: disc;
+}
+/* line 1, /Users/RYOSUKE/ls461/app/assets/stylesheets/home.scss */
+body {
+  margin: 0;
+}
+
+/* line 5, /Users/RYOSUKE/ls461/app/assets/stylesheets/home.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 9, /Users/RYOSUKE/ls461/app/assets/stylesheets/home.scss */
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(https://prog-8.com/images/html/advanced/top.png);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+/* line 17, /Users/RYOSUKE/ls461/app/assets/stylesheets/home.scss */
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* line 23, /Users/RYOSUKE/ls461/app/assets/stylesheets/home.scss */
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+}
+
+/* line 29, /Users/RYOSUKE/ls461/app/assets/stylesheets/home.scss */
+.top-wrapper p {
+  opacity: 0.7;
+  font-size: 14px;
+  margin-bottom: 35px;
+  margin: 0 auto;
+}
+
+/* line 36, /Users/RYOSUKE/ls461/app/assets/stylesheets/home.scss */
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+/* line 44, /Users/RYOSUKE/ls461/app/assets/stylesheets/home.scss */
+.btn:hover {
+  opacity: 1;
+}
+
+/* line 48, /Users/RYOSUKE/ls461/app/assets/stylesheets/home.scss */
+.fa {
+  margin-right: 5px;
+}
+
+/* line 52, /Users/RYOSUKE/ls461/app/assets/stylesheets/home.scss */
+.lesson-wrapper {
+  height: 500px;
+  padding-bottom: 80px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+/* line 59, /Users/RYOSUKE/ls461/app/assets/stylesheets/home.scss */
+.heading {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #5f5d60;
+}
+
+/* line 65, /Users/RYOSUKE/ls461/app/assets/stylesheets/home.scss */
+.heading h2 {
+  font-weight: normal;
+}
+
+/* line 69, /Users/RYOSUKE/ls461/app/assets/stylesheets/home.scss */
+.lesson {
+  float: left;
+  width: 25%;
+}
+
+/* line 74, /Users/RYOSUKE/ls461/app/assets/stylesheets/home.scss */
+.lesson-icon {
+  position: relative;
+}
+
+/* line 78, /Users/RYOSUKE/ls461/app/assets/stylesheets/home.scss */
+.lesson-icon p {
+  position: absolute;
+  top: 75px;
+  width: 100%;
+  color: white;
+}
+
+/* line 85, /Users/RYOSUKE/ls461/app/assets/stylesheets/home.scss */
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  font-size: 12px;
+  color: #b3aeb5;
+}
+
+/* line 92, /Users/RYOSUKE/ls461/app/assets/stylesheets/home.scss */
+.heading h3 {
+  font-weight: normal;
+}
+
+/* line 96, /Users/RYOSUKE/ls461/app/assets/stylesheets/home.scss */
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+/* line 102, /Users/RYOSUKE/ls461/app/assets/stylesheets/home.scss */
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0px 7px #1a7940;
+}
+
+/* line 109, /Users/RYOSUKE/ls461/app/assets/stylesheets/home.scss */
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+/* line 115, /Users/RYOSUKE/ls461/app/assets/stylesheets/home.scss */
+footer img {
+  width: 125px;
+}
+
+/* line 119, /Users/RYOSUKE/ls461/app/assets/stylesheets/home.scss */
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
+/* line 124, /Users/RYOSUKE/ls461/app/assets/stylesheets/home.scss */
+footer {
+  padding-top: 30px;
+}
+@charset "UTF-8";
+/* 投稿一覧 ================================ */
+/* line 3, /Users/RYOSUKE/ls461/app/assets/stylesheets/notes.scss */
+.notes {
+  margin: 0;
+  float: left;
+  width: 60%;
+}
+
+/* line 9, /Users/RYOSUKE/ls461/app/assets/stylesheets/notes.scss */
+.notes li {
+  overflow: auto;
+  padding: 14px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* 投稿 ================================ */
+/* line 16, /Users/RYOSUKE/ls461/app/assets/stylesheets/notes.scss */
+.notes .title, .notes .content {
+  display: block;
+}
+
+/* line 20, /Users/RYOSUKE/ls461/app/assets/stylesheets/notes.scss */
+.notes .title {
+  padding-top: 8px;
+}
+
+/* line 23, /Users/RYOSUKE/ls461/app/assets/stylesheets/notes.scss */
+.notes img {
+  display: inline-block;
+  margin-right: 12px;
+  float: left;
+  width: 56px;
+  height: 56px;
+}
+
+/* line 31, /Users/RYOSUKE/ls461/app/assets/stylesheets/notes.scss */
+aside textarea {
+  height: 120px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+/* 投稿フォーム ================================ */
+/* line 40, /Users/RYOSUKE/ls461/app/assets/stylesheets/notes.scss */
+.user-id-field {
+  width: 100%;
+}
+
+/* line 43, /Users/RYOSUKE/ls461/app/assets/stylesheets/notes.scss */
+.title-field {
+  width: 97.2%;
+}
+
+/* line 46, /Users/RYOSUKE/ls461/app/assets/stylesheets/notes.scss */
+.content-field {
+  height: 90px;
+  width: 97.2%;
+}
+@charset "UTF-8";
+/* ユーザーのshowページ ================================ */
+/* line 3, /Users/RYOSUKE/ls461/app/assets/stylesheets/users.scss */
+.sidebar {
+  width: 34%;
+  float: left;
+  margin-bottom: 30px;
+}
+
+/* line 9, /Users/RYOSUKE/ls461/app/assets/stylesheets/users.scss */
+.label {
+  color: #C0C0C2;
+}
+
+/* line 13, /Users/RYOSUKE/ls461/app/assets/stylesheets/users.scss */
+.user-info {
+  margin: 10px 0 30px 0;
+}
+
+/* ユーザー共通 ================================ */
+/* line 18, /Users/RYOSUKE/ls461/app/assets/stylesheets/users.scss */
+.profile_img {
+  width: 52px;
+  height: 52px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+ .navbar {
+   height: 65px;
+   width: 100%;
+   background-color: rgba(34, 49, 52, 0.9);
+   top: 0;
+   right: 0;
+   left: 0;
+   margin-bottom: 20px;
+   position:fixed;
+   z-index:10;
+ }
